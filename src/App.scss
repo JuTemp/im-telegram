@@ -1,0 +1,140 @@
+#Header {
+    & {
+        color: #fff;
+        height: 6vh;
+        background-color: #7dbcea;
+    }
+
+    >img {
+        height: 6vh;
+        object-fit: contain;
+        margin-left: 1vh;
+    }
+}
+
+#Sider {
+    & {
+        color: #fff;
+        width: 20vw;
+        height: 94vh;
+        background-color: #ffffff;
+    }
+
+    >div.b2 {
+        & {
+            width: calc(100% - 1vh);
+            height: 8vh;
+            border-radius: 3vh;
+            margin: 0.5vh;
+        }
+
+        &:hover {
+            background-color: #e0e0e0;
+        }
+
+        >div {
+            & {
+                height: auto;
+            }
+
+            >img {
+                width: 6vh;
+                height: 6vh;
+                margin: calc(1vh - 1px);
+                margin-left: calc(2vh - 1px);
+                border-radius: 2vh;
+            }
+
+            >span {
+                padding: 1vh;
+                float: left;
+                color: black;
+                font-size: 1.5rem;
+
+            }
+        }
+    }
+}
+
+#Content {
+    & {
+        color: #fff;
+        width: 20vw;
+        height: 94vh;
+        background-color: #f0f0f0;
+    }
+
+    >div.messages {
+
+        & {
+            height: auto;
+        }
+
+        >div.item {
+
+            & {
+                width: 100%;
+                margin: 0vh 0vh 1vh 0vh;
+            }
+
+            span.name {
+                width: auto;
+                height: 100%;
+                color: black;
+                font-size: 1.5rem;
+                margin: 1vh 1vh 0vh 1vh;
+            }
+
+            span.time {
+                width: auto;
+                height: 100%;
+                color: black;
+                font-size: 1.5rem;
+                margin: 1vh 0vh 0vh 0vh;
+            }
+
+            span.message {
+                float: left;
+                color: black;
+                font-size: 1.5rem;
+                margin: 0.5vh 0vh 0vh 2rem;
+            }
+
+        }
+    }
+
+    >div.input {
+
+        & {
+            margin: 1vh;
+        }
+
+        >input#input {
+            font-size: 1.5rem;
+            caret-color: auto;
+        }
+
+        >button#submit {
+            font-size: 1.5rem;
+            margin-left: 1vh;
+        }
+    }
+}
+
+.df {
+    display: flex;
+}
+
+.dfR {
+    @extend .df;
+    flex-direction: row;
+}
+
+.dfC {
+    @extend .df;
+    flex-direction: column;
+}
+
+body {
+    caret-color: transparent;
+}
